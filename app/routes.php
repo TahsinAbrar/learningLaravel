@@ -36,5 +36,13 @@ Route::post('/contact', function(){
     if($validator->fails()){
         return Redirect::to('contact')->withErrors($validator)->withInput();
     }
+    $emailcontent = array(
+        'subject' => $data['subject'],
+        'emailmessage' => $data['message']
+    );
+    Mail::send('emails.contactemail',$emailcontent, function($message){
+        $message->to('mailme@tahsinabrar.com', 'Learning Laravel Support')
+        ->subject('Contact via Our Contact Form.');
+    });
     return 'Your message has been sent.';
 });
