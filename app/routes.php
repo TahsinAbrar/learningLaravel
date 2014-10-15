@@ -13,5 +13,5 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return "Hello! Welcome to the learning Web App with Laravel.";
 });
