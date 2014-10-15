@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-	return "Hello! Welcome to the learning Web App with Laravel.";
+	return View::make('home');
 });
 
 Route::get('/about', function(){
