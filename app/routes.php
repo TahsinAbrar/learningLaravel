@@ -21,5 +21,5 @@ Route::get('/about', function(){
 });
 
 Route::get('/contact', function(){
-    return "This is contact page.";
+    return View::make('contact');
 });
