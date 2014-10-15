@@ -15,3 +15,11 @@ Route::get('/', function()
 {
 	return "Hello! Welcome to the learning Web App with Laravel.";
 });
+
+Route::get('/about', function(){
+    return "This is about page.";
+});
+
+Route::get('/contact', function(){
+    return "This is contact page.";
+});
