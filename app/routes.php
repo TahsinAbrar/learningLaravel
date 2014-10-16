@@ -13,7 +13,10 @@
 
 Route::get('/', function()
 {
-	return View::make('home');
+    Schema::create('tasks', function($table){
+        $table->increments('id');
+    });
+//	return View::make('home');
 });
 
 Route::get('/about', function(){
