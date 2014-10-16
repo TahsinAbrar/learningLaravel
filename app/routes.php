@@ -13,9 +13,7 @@
 
 Route::get('/', function()
 {
-    Schema::create('tasks', function($table){
-        $table->increments('id');
-    });
+    Schema::drop('tasks');
 //	return View::make('home');
 });
 
