@@ -39,6 +39,24 @@
 
     @yield('content')
 
+    <div class="bottom-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 navbar-brand">
+                    <a href="/">Learning Laravel</a>
+                </div>
+
+                <div class="col-md-10">
+                    <ul class="bottom-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
   {{--Adding jQuery CDN --}}
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
