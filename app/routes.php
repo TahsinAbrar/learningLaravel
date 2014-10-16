@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-    Schema::drop('tasks');
+    Schema::dropIfExists('tasks');
 //	return View::make('home');
 });
 
