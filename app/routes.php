@@ -13,7 +13,14 @@
 
 Route::get('/', function()
 {
-    Schema::dropIfExists('tasks');
+    Schema::create('tasks', function($table){
+        $table->increments('id');
+        $table->string('title');
+        $table->text('body');
+        $table->integer('user_id');
+        $table->boolean('done');
+        $table->timestamps();
+    });
 //	return View::make('home');
 });
 
