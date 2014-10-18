@@ -13,14 +13,10 @@
 
 Route::get('/', function()
 {
-    Schema::create('tasks', function($table){
-        $table->increments('id');
-        $table->string('title');
-        $table->text('body');
-        $table->integer('user_id');
-        $table->boolean('done');
-        $table->timestamps();
-    });
+    $task = new Task;
+    $task->title = "Eating Breakfast";
+    $task->body = "Remember to buy bread, egg and sugar.";
+    $task->save();
 //	return View::make('home');
 });
 
