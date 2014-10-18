@@ -14,6 +14,7 @@
 Route::get('/', 'TasksController@home');
 
 Route::get('/create', 'TasksController@create');
+Route::post('/create', 'TasksController@saveCreate');
 Route::get('/edit', 'TasksController@edit');
 Route::get('/delete', 'TasksController@delete');
 
