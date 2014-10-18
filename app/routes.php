@@ -13,7 +13,10 @@
 
 Route::get('/', function()
 {
-    Task::withTrashed()->where('id', 4)->restore();
+    $task =  Task::find(4);
+    return $task->title;
+
+    // Task::withTrashed()->where('id', 4)->restore(); -- to restore a softdeleted data
 
 //	return View::make('home');
 });
