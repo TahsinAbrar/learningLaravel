@@ -13,17 +13,17 @@
     <section class="section-padding">
         <div class="jumbotron text-center">
             <h1>Create A Task</h1>
-            {{ Form::open(['url'=>'/create']) }}
-            <div>
+            {{ Form::open(['url'=>'/create', 'class'=>'form']) }}
+            <div class="form-group">
                 {{Form::label('title', 'Title: ')}}
-                {{ Form::text('title') }}
+                {{ Form::text('title',null,['class'=>'form-control']) }}
             </div>
-            <div>
+            <div class="form-group">
                 {{Form::label('body', 'Body: ')}}
-                {{ Form::textarea('body') }}
+                {{ Form::textarea('body',null,['class'=>'form-control']) }}
             </div>
-            <div>
-                {{ Form::submit('Create Task') }}
+            <div class="form-group">
+                {{ Form::submit('Create Task',['class'=>'btn btn-primary']) }}
             </div>
             {{ Form::close() }}
         </div>

@@ -94,6 +94,9 @@ body{
     float: left;
     margin: 0 20px 0 0;
 }
+.text-center{
+    text-align: left;
+}
 @media (max-width: 767px) {
     .jumbotron h1{
         font-size: 22px;
