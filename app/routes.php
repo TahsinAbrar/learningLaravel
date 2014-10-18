@@ -14,9 +14,7 @@
 Route::get('/', function()
 {
     $task = Task::find(1);
-    $task->title = "Eating different Breakfast";
-    $task->body = "Remember to buy beefsteak.";
-    $task->save();
+    $task->delete();
 //	return View::make('home');
 });
 
