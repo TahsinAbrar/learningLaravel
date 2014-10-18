@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-    $task = Task::find(1);
+    $task = Task::find(4);
     $task->delete();
 //	return View::make('home');
 });
