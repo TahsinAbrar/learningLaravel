@@ -13,8 +13,8 @@
 
 Route::get('/', function()
 {
-    $task = Task::find(4);
-    $task->delete();
+    Task::withTrashed()->where('id', 4)->restore();
+
 //	return View::make('home');
 });
 
