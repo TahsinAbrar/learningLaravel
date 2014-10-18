@@ -17,7 +17,8 @@ Route::get('/create', 'TasksController@create');
 Route::post('/create', 'TasksController@saveCreate');
 Route::get('/edit/{task}', 'TasksController@edit');
 Route::post('/edit', 'TasksController@doEdit');
-Route::get('/delete', 'TasksController@delete');
+Route::get('/delete/{task}', 'TasksController@delete');
+Route::post('/delete/', 'TasksController@doDelete');
 
 Route::get('/about', function(){
     return View::make('about');

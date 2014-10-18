@@ -33,7 +33,12 @@ class TasksController extends BaseController {
         $task->save();
         return Redirect::action('TasksController@home');
     }
-    public function delete(){
-        return View::make('delete');
+    public function delete(Task $task){
+        return View::make('delete',compact('task'));
+    }
+    public function doDelete(){
+        $task = Task::findOrFail(Input::get('id'));
+        $task->delete();
+        return Redirect::action('TasksController@home');
     }
 } 
