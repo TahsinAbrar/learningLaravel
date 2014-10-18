@@ -43,6 +43,10 @@
                         <td>{{$task->title}}</td>
                         <td>{{$task->body}}</td>
                         <td>{{$task->done ? 'Yes' : 'No' }}</td>
+                        <td>
+                            <a class="btn btn-info" href="{{URL::action('TasksController@edit',$task->id)}}">Edit</a>
+                            <a class="btn btn-danger" href="{{URL::action('TasksController@delete',$task->id)}}">Delete</a>
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>

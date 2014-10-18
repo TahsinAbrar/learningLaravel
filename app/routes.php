@@ -10,12 +10,13 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
+Route::model('task','Task');
 Route::get('/', 'TasksController@home');
 
 Route::get('/create', 'TasksController@create');
 Route::post('/create', 'TasksController@saveCreate');
-Route::get('/edit', 'TasksController@edit');
+Route::get('/edit/{task}', 'TasksController@edit');
+Route::post('/edit', 'TasksController@doEdit');
 Route::get('/delete', 'TasksController@delete');
 
 Route::get('/about', function(){
