@@ -11,15 +11,11 @@
 |
 */
 
-Route::get('/', function()
-{
-    $task =  Task::find(4);
-    return $task->title;
+Route::get('/', 'TasksController@home');
 
-    // Task::withTrashed()->where('id', 4)->restore(); -- to restore a softdeleted data
-
-//	return View::make('home');
-});
+Route::get('/create', 'TasksController@create');
+Route::get('/edit', 'TasksController@edit');
+Route::get('/delete', 'TasksController@delete');
 
 Route::get('/about', function(){
     return View::make('about');
