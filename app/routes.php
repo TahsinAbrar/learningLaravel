@@ -19,6 +19,7 @@ Route::get('/edit/{task}', 'TasksController@edit');
 Route::post('/edit', 'TasksController@doEdit');
 Route::get('/delete/{task}', 'TasksController@delete');
 Route::post('/delete/', 'TasksController@doDelete');
+Route::get('task/{id}','TasksController@show')->where('id','\d+');
 
 Route::get('/about', function(){
     return View::make('about');

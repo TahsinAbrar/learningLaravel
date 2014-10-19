@@ -41,4 +41,8 @@ class TasksController extends BaseController {
         $task->delete();
         return Redirect::action('TasksController@home');
     }
+    public function show($id){
+        $task = Task::find($id);
+        return View::make('task', compact('task'));
+    }
 } 
