@@ -1,25 +1,49 @@
-## Laravel PHP Framework
+#Learning Laravel - ToDo App
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+[![](http://laravel.com/assets/img/logo-head.png)](http://laravel.com)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+###### I've been developing this To-Do App for learning Laravel Framework. I followed the book: ***["Learning Laravel The Easiest Way"](http://learninglaravel.net/)*** by *Jack Vo*.
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+I think, this is the best laravel learning book for the beginners.
 
-## Official Documentation
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
+Laravel is a web application framework with expressive, elegant syntax. Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. And I'm trying hard to become a Happy developer. :bowtie:
+<br/>
+************************
+<br/>
+#### Here, the context of this project are:
 
-### Contributing To Laravel
 
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
+
+
+1. Welcome Page with Laravel
+2. Creating Layout page with Bootstrap for the ToDo App
+3. Creating Contact Form with Laravel blade template form builder
+4. Add Validation to the Contact page with Laravel Validation
+5. Creating a working send mail feature for the app
+6. Creating database table using Schema builder & migrate feature of Laravel
+7. Using Eloquent ORM for CRUD System
+8. Creating Task CRUD (Create, Read, Update, Delete) System for ToDo App
+9. Add validation on saving a task.
+
+<br/>
+**************************************
+<br/>
+
+### Important Links to learn Laravel:
+
+1.  [Laravel Documentation](http://laravel.com/docs).
+2.  [Laracast ](https://laracasts.com/)
+3.  [Culttt.com ](http://culttt.com)
+
+
+
+-------------------
+
+
 
 ### License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
