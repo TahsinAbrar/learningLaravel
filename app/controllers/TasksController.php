@@ -15,12 +15,20 @@ class TasksController extends BaseController {
         return View::make('create');
     }
     public function saveCreate(){
-        $input = Input::all();
-        $task = new Task;
-        $task->title = $input['title'];
-        $task->body = $input['body'];
-        $task->save();
-        return Redirect::action('TasksController@home');
+        $data = Input::all();
+        $rules = array(
+            'title' => 'required',
+            'body' => 'required'
+        );
+        $validator = Validator::make($data, $rules);
+        if($validator->passes()){
+            $task = new Task;
+            $task->title = $input['title'];
+            $task->body = $input['body'];
+            $task->save();
+            return Redirect::action('TasksController@home');
+        }
+        return Redirect::action('TasksController@create');
     }
     public function edit(Task $task){
         return View::make('edit',compact('task'));
